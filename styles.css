@@ -1,0 +1,273 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* prevent */
+body, #grid-container, .block, .toolbar, .sidebar, .workspace, .css-editor-container {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+body {
+    font-size: 12px;
+    color: #24292e;
+    background-color: #f6f8fa;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+.toolbar {
+    display: flex;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e4e8;
+    padding: 5px 10px;
+    align-items: center;
+}
+.toolbar-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.toolbar-btn {
+    background-color: #ffffff;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.toolbar-btn:hover {
+    background-color: #f3f4f6;
+}
+.toolbar-btn.active {
+    background-color: #e1e4e8;
+}
+.toolbar-btn i {
+    font-size: 14px;
+    color: #586069;
+}
+.toolbar-label {
+    margin-right: 5px;
+    color: #586069;
+}
+.toolbar-input,
+.toolbar-select {
+    font-size: 12px;
+    padding: 4px;
+    width: 60px;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    background-color: #fafbfc;
+    color: #24292e;
+}
+.toolbar-input:focus,
+.toolbar-select:focus {
+    border-color: #0366d6;
+    outline: none;
+}
+.toolbar-select {
+    width: 80px;
+}
+.main-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+.sidebar {
+    width: 300px;
+    background-color: #f6f8fa;
+    border-right: 1px solid #e1e4e8;
+    padding: 10px;
+    overflow-y: auto;
+}
+.sidebar h3 {
+    font-size: 14px;
+    color: #24292e;
+    margin-bottom: 10px;
+}
+.json-log {
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 12px;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    color: #24292e;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.saved-layouts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.saved-layouts-table th,
+.saved-layouts-table td {
+    border: 1px solid #e1e4e8;
+    padding: 8px;
+    text-align: left;
+    font-size: 12px;
+}
+.saved-layouts-table th {
+    background-color: #f6f8fa;
+    color: #24292e;
+}
+.saved-layouts-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.saved-layouts-table tbody tr:nth-child(even) {
+    background-color: #f6f8fa;
+}
+.table-btn {
+    background-color: #ffffff;
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-right: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s;
+}
+.table-btn:hover {
+    background-color: #f3f4f6;
+}
+.workspace {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+#grid-container {
+    flex: 1;
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 1px solid #e1e4e8;
+}
+.css-editor-container {
+    width: 300px;
+    background-color: #f6f8fa;
+    border-left: 1px solid #e1e4e8;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.css-editor-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e4e8;
+    padding: 4px 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+.css-editor-header label {
+    display: flex;
+    align-items: center;
+    color: #24292e;
+}
+.css-editor-header input[type="checkbox"] {
+    margin-right: 5px;
+}
+#css-editor {
+    flex: 1;
+    border: none;
+    font-size: 12px;
+}
+.CodeMirror {
+    height: 100%;
+}
+.apply-css-btn {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-top: 1px solid #e1e4e8;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s;
+}
+.apply-css-btn:hover {
+    background-color: #218838;
+}
+.block {
+    position: absolute;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.block.selected {
+    border: 2px solid #0366d6;
+    cursor: move;
+}
+.block.css-selected {
+    border: 2px solid #d73a49;
+    cursor: pointer;
+}
+.block.flex {
+    display: flex;
+}
+.block.block {
+    display: block;
+}
+.info-box {
+    position: absolute;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    z-index: 3;
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: visible;
+}
+.info-div {
+    background-color: #0366d6;
+}
+.info-span {
+    background-color: #6f42c1;
+}
+.info-flex {
+    background-color: #28a745;
+}
+.info-block {
+    background-color: #d73a49;
+}
+.resize-handle {
+    width: 8px;
+    height: 8px;
+    background-color: #0366d6;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.resize-handle.nw { top: -4px; left: -4px; cursor: nwse-resize; }
+.resize-handle.ne { top: -4px; right: -4px; cursor: nesw-resize; }
+.resize-handle.sw { bottom: -4px; left: -4px; cursor: nesw-resize; }
+.resize-handle.se { bottom: -4px; right: -4px; cursor: nwse-resize; }
+.align-line {
+    position: absolute;
+    background-color: #d73a49;
+    z-index: 2;
+}
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+body, .main-container, .sidebar, .workspace, #grid-container, .css-editor-container {
+    overflow: hidden;
+}
+.CodeMirror {
+    height: 100%;
+}
