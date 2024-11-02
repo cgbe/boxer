@@ -51,8 +51,4 @@ block { background: moccasin; }   # Block element
 }
 ```
 
-## JSON Preview
-![JSON preview](https://github.com/cgbe/boxer/assets/screenshots/json.png)
-*Real-time JSON output of your layout structure*
-
 Built with vanilla JS. Feel free to use/modify!
