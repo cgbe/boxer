@@ -1,7 +1,7 @@
 # Boxer
 A simple box model editor I made to help with layout planning.
 
-![2D-wireframe-generator--Boxer_main_interface](https://github.com/user-attachments/assets/e3f360cf-4a19-4256-aedd-ad2b2eaebe83)
+![2D-wireframe-generator--Boxer_main_interface](https://github.com/user-attachments/assets/0a4ecdc6-a4ad-4e51-80a6-f7b41942d4ec)
 *Design layouts visually with an intuitive grid system*
 
 ## What it does
@@ -10,7 +10,7 @@ Draw boxes on a grid, nest them, and get the corresponding HTML/CSS structure. B
 ## Features
 
 ### Box Creation & Nesting
-![2D-wireframe-generator--Boxer_nesting](https://github.com/user-attachments/assets/8260b261-c367-4ece-95c7-dff3fff13ce8)
+![2D-wireframe-generator--Boxer_nesting](https://github.com/user-attachments/assets/fc45c433-e787-4b7e-b49a-269957a4643e)
 *Click and drag to resize boxes, nest them for complex layouts*
 
 - Click & drag to create boxes
