@@ -1,4 +1,4 @@
-# Wireframes for days
+# Boxer
 Draw boxes on a grid, nest them, and get the corresponding JSON structure. Built this mainly for generating JSON to feed a chatbot to get a starting layout for prototyping.
 
 ![2D-wireframe-generator--Boxer_main_interface](https://github.com/user-attachments/assets/0a4ecdc6-a4ad-4e51-80a6-f7b41942d4ec)
