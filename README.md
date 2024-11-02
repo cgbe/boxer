@@ -1,5 +1,5 @@
 # Boxer
-Draw boxes on a grid, nest them, and get the corresponding HTML/CSS structure. Built this mainly to help visualize layouts before coding them.
+Draw boxes on a grid, nest them, and get the corresponding JSON structure. Built this mainly to generate JSON to feed to a chatbot to get a starting layout for prototyping.
 
 ![2D-wireframe-generator--Boxer_main_interface](https://github.com/user-attachments/assets/0a4ecdc6-a4ad-4e51-80a6-f7b41942d4ec)
 *Design layouts visually with an intuitive grid system*
